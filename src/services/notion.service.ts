@@ -142,7 +142,7 @@ export class NotionService {
           price: Price.number,
           imageUrl: Image.files[0].external.url,
           tags: Tags.multi_select.map((tag) => tag.name),
-          createdTime: CreatedTime.last_edited_time,
+          createdTime: CreatedTime.created_time,
           lastEdited: LastEdited.last_edited_time,
         };
       });
